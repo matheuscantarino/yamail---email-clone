@@ -1,0 +1,48 @@
+body{
+    background-color: #f1f1f1;
+}
+.boxbody{
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    height: 768px;
+    width: 1200px;
+    background-color: white;
+    border: solid white;
+    border-radius: 9px;
+}
+.leftbox {
+    position: absolute;
+    height: 768px;
+    width: 300px;
+    background-color: #232121;
+    border-radius: 6.5px;
+    z-index: 3;
+}
+.leftbox h2{
+    position: absolute;
+    top: -15px;
+    left: 100px;
+    font-size: 28px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+.leftbox hr{
+    position: relative;
+    top: 35px;
+    height:1px; 
+    width: 300px;
+    background-color: white;
+    border: 1px solid white;
+}
+.boxmessages {
+    position: absolute;
+    top: 46px;
+    left: 304px;
+    height: 717px;
+    width: 890px;
+    background-color:#232121;
+    border: solid #232121;
+    border-radius: 9px;
+    z-index: 2;
+}
