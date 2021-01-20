@@ -1,5 +1,6 @@
+@font-face {font-family: "Lemon/Milk"; src: url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.eot"); src: url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.woff") format("woff"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/67137b5f6928edc941186baaab5a664b.svg#Lemon/Milk") format("svg"); }
 body{
-    background-color: #f1f1f1;
+    background-color: white;
 }
 .boxbody{
     position: absolute;
@@ -7,42 +8,107 @@ body{
     left: 250px;
     height: 768px;
     width: 1200px;
-    background-color: white;
-    border: solid white;
-    border-radius: 9px;
+    background-color: #2D2B40;
+    border: solid #2D2B40;
+    border-radius: 12px;
 }
 .leftbox {
     position: absolute;
     height: 768px;
     width: 300px;
-    background-color: #232121;
-    border-radius: 6.5px;
+    background-color: #4B486B;
+    border-radius: 12px;
     z-index: 3;
-}
-.leftbox h2{
-    position: absolute;
-    top: -15px;
-    left: 100px;
-    font-size: 28px;
-    font-family: 'Bebas Neue', cursive;
-    color: white;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 .leftbox hr{
     position: relative;
     top: 35px;
     height:1px; 
-    width: 300px;
-    background-color: white;
-    border: 1px solid white;
+    width: 298px;
+    background-color: #2D2B40;
+    border: 1px solid #2D2B40;
+    box-shadow: inset 0 0 1em rgb(0, 0, 0);
 }
+.leftbox h4{
+    position: absolute;
+    font-size: 15px;
+    font-family: 'Lemon Milk', cursive;
+    color: white;
+}
+.boxwrite {
+    position: absolute;
+    background-color: #4B486B;
+    height: 30px;
+    width: 150px;
+    top: 4px;
+    left: 65px;
+    border: solid 2px white;
+    border-radius: 12px;
+}
+.boxwrite h3{
+    position: absolute;
+    font-size: 15px;
+    font-family: 'Lemon Milk', cursive;
+    color: white;
+    top: -10px;
+    left: 15px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.mailwindow{
+    position: relative;
+    background-color: #4B486B;
+    margin-top: -15px;
+    height: 25px;
+    width: 287px;
+    top: 45px;
+    left: 5px;
+    border: solid 1px white;
+    border-radius: 12px;  
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lemon Milk', cursive;
+    color: white;
+    z-index: 3;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.mailwindow a{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+    font-family: 'Lemon Milk', cursive;
+    color: white;
+    z-index: 3;  
+    text-decoration:none;
+}
+.boxbody h2{
+    position: absolute;
+    top: -22px;
+    left: 700px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lemon Milk', cursive;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
 .boxmessages {
     position: absolute;
+    display: flex;
     top: 46px;
     left: 304px;
     height: 717px;
     width: 890px;
-    background-color:#232121;
-    border: solid #232121;
-    border-radius: 9px;
+    background-color:#4B486B;
+    border: solid #4B486B;
+    border-radius: 12px;
     z-index: 2;
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+}
+.boxmessages p {
+    position: absolute;
+    left: 500px;
+    font-size: 70px;
+    
 }
