@@ -7,19 +7,6 @@
     $sql = "SELECT * FROM messages WHERE contact = '{$user}'";
     $result = mysqli_query($conn,$sql) or die("Error returning data");
 ?>
-<?php 
-    while ($register = mysqli_fetch_array($result)) {
-        $usersend = $register['user'];
-        $contact = $register['contact'];
-        $emailmsg = $register['emailmsg'];
-        $subjectt = $register['subjectt'];
-        $messageid = $register['messagesid'];
-        if ($id == $messageid) {
-            $message = $emailmsg;
-            echo $message;
-        }
-    }
-?>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="./css/main.css">
@@ -32,6 +19,23 @@
                 <div class = "boxwrite">
                     <h3>Write E-mail</h3>
                 </div>
+                <?php 
+                while ($register = mysqli_fetch_array($result)) {
+                    $usersend = $register['user'];
+                    $contact = $register['contact'];
+                    $emailmsg = $register['emailmsg'];
+                    $subjectt = $register['subjectt'];
+                    $messageid = $register['messagesid'];
+                    if ($id == $messageid) {
+                        $message = $emailmsg;
+                        ?><html><div class = "mailwindow"><a href="receivedemail.php?id=<?php echo $register['messagesid']; ?>"><?php echo substr($register['user'] . '|' . '&nbsp&nbsp' . $register['subjectt'], 0, 40); ?></a></div><br><?php
+                    }
+                    if ($id == $messageid) {
+                        ?><html><div class = "boxmessages"><p><?php echo $message;?></p></div></html><?php
+                    }
+                }
+                ?>             
+            </div>
             </div>
         </div>
     </body>

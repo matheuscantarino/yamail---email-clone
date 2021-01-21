@@ -6,6 +6,9 @@
     $user = $_SESSION['user'];
     $sql = "SELECT * FROM messages WHERE contact = '{$user}'";
     $result = mysqli_query($conn,$sql) or die("Error returning data");
+    $resultado = 10000;
+    //echo number_format(($post['preçoreal'] * 0.5),2,",",".");
+    //$valor_descontado = $total - ($total / 100 * $pctm)
 ?>
 <html>
     <head>
